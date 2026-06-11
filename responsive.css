@@ -1,0 +1,112 @@
+/*RESPONSIVE LAYOUT*/
+
+/* Tablets and below */
+@media (max-width: 768px) {
+
+    body {
+        padding: 20px;
+        min-height: 100vh;
+        background-attachment: scroll;
+    }
+
+    .uno {
+        font-size: 1.2rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 20px;
+        margin-top: 2rem;
+    }
+
+    .two {
+        width: 100%;
+        max-width: 400px;
+        transform: none;
+        border-radius: 10px;
+    }
+
+    .two.adjust {
+        transform: none;
+        margin: 0;
+    }
+
+    .amount {
+        font-size: 1.5rem;
+    }
+
+    .amount span {
+        font-size: 2.5rem;
+    }
+}
+
+
+/* Small Phones */
+@media (max-width: 480px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .uno {
+        font-size: 1rem;
+    }
+
+    .six {
+        gap: 8px;
+    }
+
+    .five {
+        font-size: 0.8rem;
+    }
+
+    .two {
+        max-width: 100%;
+        padding: 25px 15px;
+    }
+
+    .amount {
+        font-size: 1.25rem;
+    }
+
+    .amount span {
+        font-size: 2rem;
+    }
+
+    .two button {
+        padding: 12px;
+        font-size: 0.75rem;
+    }
+}
+
+
+/*TABLET (768px+)*/
+
+@media (min-width: 768px) {
+
+    body {
+        padding: 2rem;
+    }
+
+    .two {
+        max-width: 420px;
+    }
+}
+
+/*DESKTOP (1024px+)*/
+
+@media (min-width: 1024px) {
+
+    main {
+        justify-content: center;
+        align-items: stretch;
+    }
+
+    .two {
+        max-width: 450px;
+    }
+}
